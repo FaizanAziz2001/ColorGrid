@@ -1,0 +1,30 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.inner-body{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: green;
+}
+
+.inner-body #inner-grid{
+    display: grid;
+    height: 800px;
+    width: 800px;
+    background-color: wheat;
+    border-radius: 5px;
+}
+
+.inner-body .cell
+{
+    border: 0.1px solid rgba(190, 190, 190, 0.199);
+
+}
