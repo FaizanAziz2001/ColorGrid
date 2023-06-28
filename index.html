@@ -7,18 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <div class="header">
+        <p>Etch-a-Sketch</p>
+    </div>
+
     <div class="inner-body" >
         <div>
-            <p id="inner-text">64</p>
-            <input type="range" id="inner-slider" min="8" max="104" step="8" value="64" oninput="setSliderText()">
-            <br>
-            <button id="inner-button">Set</button>
-            <div>
-                Set a color
+
+            <div class="inner-container">
+                <div >
+                    <p>Select a color</p>
+                    <input id="inner-color" type="color" oninput="updateColor(this.value)"><br>
+                    <button id="clear-btn">Clear all</button><br>
+                    <button id="erasor">Eraser</button>
+                </div>
+    
+                <div class="inner-options">
+                    <p id="inner-text">64</p>
+                    <input type="range" id="inner-slider" min="8" max="104" step="8" value="64" oninput="setSliderText(this.value)"><br>
+                    <button id="inner-button">Set</button>
+                </div>
             </div>
+     
         </div>
 
+    </div>
+
+    <div class="footer">
+        <p>The Odin Project</p>
     </div>
 </body>
 </html>
